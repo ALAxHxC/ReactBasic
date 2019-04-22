@@ -70,7 +70,7 @@ class Firebase {
           .once('value')
           .then(snapshot => {
             const dbUser = snapshot.val();
-
+            console.log('Db Users', dbUser)
             // default empty roles
             if (!dbUser.roles) {
               dbUser.roles = {};
